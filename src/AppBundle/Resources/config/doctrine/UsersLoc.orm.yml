@@ -1,0 +1,27 @@
+AppBundle\Entity\UsersLoc:
+    type: entity
+    table: users_loc
+    id:
+        uid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: UID
+            generator:
+                strategy: IDENTITY
+    fields:
+        coordX:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: COORD_X
+        coordY:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: COORD_Y
+    lifecycleCallbacks: {  }

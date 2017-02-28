@@ -1,0 +1,40 @@
+AppBundle\Entity\UsersDefi:
+    type: entity
+    table: users_defi
+    id:
+        udid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: UDID
+            generator:
+                strategy: IDENTITY
+    fields:
+        uid1:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: UID1
+        uid2:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: UID2
+        did:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: DID
+        statut:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: STATUT
+    lifecycleCallbacks: {  }

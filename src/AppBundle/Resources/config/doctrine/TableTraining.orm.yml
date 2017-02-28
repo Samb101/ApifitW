@@ -1,0 +1,42 @@
+AppBundle\Entity\TableTraining:
+    type: entity
+    table: table_training
+    id:
+        tid:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: TID
+            generator:
+                strategy: IDENTITY
+    fields:
+        sport:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: SPORT
+        level:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: LEVEL
+        time:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: TIME
+        content:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: CONTENT
+    lifecycleCallbacks: {  }

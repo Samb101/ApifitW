@@ -1,0 +1,59 @@
+@media screen and (min-width:769px) and (max-width: 1279px){
+
+
+  .carousel, .item, .active {
+      height: auto;
+  }
+
+  .carousel-inner {
+      height:20%;
+  }
+  .carousel-caption
+  {
+  	top:2%;
+  	left:50%!important;
+  }
+
+  .carousel-caption>h2{
+    font-size:13vw;
+  }
+  .carousel-caption>p{
+    font-size:20px;
+  }
+
+
+
+  .service
+  {
+  background-image: url("../images/image-service.jpeg");
+  background-size:cover;
+  background-color:#cccccc;
+  height:20%;
+  margin: 30px 0 30px 0;
+
+  }
+
+}
+
+.fondordi{
+  padding-top: 100px;
+}
+
+.fondordi img{
+  height: 200px;
+  width: 200px;
+}
+
+.service {
+  background-image: url("../images/image-service.jpg");
+}
+
+#equipe {
+  padding-bottom: 10px;
+}
+
+#casemembres{
+  display: inline-block;
+
+}
+

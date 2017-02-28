@@ -1,0 +1,97 @@
+AppBundle\Entity\UsersData:
+    type: entity
+    table: users_data
+    id:
+        seq:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: SEQ
+            generator:
+                strategy: IDENTITY
+    fields:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: ID
+        date:
+            type: date
+            nullable: false
+            column: DATE
+        level:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: LEVEL
+        weight:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: WEIGHT
+        height:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: HEIGHT
+        gender:
+            type: string
+            nullable: false
+            length: 8
+            options:
+                fixed: false
+            column: GENDER
+        age:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: AGE
+        dateOfBirth:
+            type: string
+            nullable: false
+            length: 8
+            options:
+                fixed: false
+            column: DATE_OF_BIRTH
+        timezone:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: TIMEZONE
+        strideLenghtRunning:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: STRIDE_LENGHT_RUNNING
+        strideLenghtWalking:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: STRIDE_LENGHT_WALKING
+        strideLenghtRunningType:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: STRIDE_LENGHT_RUNNING_TYPE
+        strideLenghtWalkingType:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: STRIDE_LENGHT_WALKING_TYPE
+    lifecycleCallbacks: {  }

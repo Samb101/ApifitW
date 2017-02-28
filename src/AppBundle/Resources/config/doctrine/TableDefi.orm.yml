@@ -1,0 +1,47 @@
+AppBundle\Entity\TableDefi:
+    type: entity
+    table: table_defi
+    id:
+        did:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            column: DID
+            generator:
+                strategy: IDENTITY
+    fields:
+        level:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: LEVEL
+        xp:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: XP
+        sport:
+            type: string
+            nullable: false
+            length: 30
+            options:
+                fixed: false
+            column: SPORT
+        content:
+            type: string
+            nullable: false
+            length: 255
+            options:
+                fixed: false
+            column: CONTENT
+        progress:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            column: PROGRESS
+    lifecycleCallbacks: {  }
